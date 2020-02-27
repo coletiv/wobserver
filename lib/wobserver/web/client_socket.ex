@@ -63,7 +63,6 @@ defmodule Wobserver.Web.ClientSocket do
 
       @security Application.get_env(:wobserver, :security, Wobserver.Security)
 
-      @behaviour :cowboy_websocket_handler
       @behaviour Wobserver.Web.ClientSocket
 
       @timeout 60_000
